@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -9,41 +9,42 @@
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -53,7 +54,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -61,22 +61,26 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
+			(plot_black_and_white yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "output/")
 		)
 	)
 	(net 0 "")
@@ -117,18 +121,6 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c4abe4e5-a006-496b-b4c5-de8f8449c513")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -138,6 +130,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -150,6 +143,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -161,7 +155,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "9e740a06-6ac0-42af-a317-71cad0641e0b")
 		)
@@ -172,7 +166,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "1c38de5a-1f2c-499f-ae81-16dd68bdbc48")
 		)
@@ -194,6 +188,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "0b95743f-3c18-4d90-959d-2446538471d4")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm"
 		(layer "F.Cu")
@@ -202,7 +197,7 @@
 		(descr "SMD rectangular pad as test Point, square 1.5mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "TP6"
-			(at 0 -1.648 -90)
+			(at 0 -1.648 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "c96dbed4-40b3-4a20-a4c4-eba3f1c01440")
@@ -214,25 +209,13 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 0 1.75 -90)
+			(at 0 1.75 270)
 			(layer "F.Fab")
 			(uuid "064afec4-322a-4a46-a6b4-6f0855a1f88b")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ec39bc00-a010-4696-bf89-b78279db9c4b")
-			(effects
-				(font
-					(size 1.27 1.27)
 				)
 			)
 		)
@@ -245,6 +228,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -257,12 +241,13 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/f791499d-e87c-4ba2-8ff7-bd7719fffe16")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RJ45BreakOut.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_line
@@ -346,7 +331,7 @@
 			(uuid "3a869466-fcb9-449d-ba83-8dcdc08c69bf")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.65 -90)
+			(at 0 -1.65 270)
 			(layer "F.Fab")
 			(uuid "b280aab6-cfae-4180-9a49-247b55a1aa40")
 			(effects
@@ -365,6 +350,7 @@
 			(pintype "passive")
 			(uuid "358627ba-a2b9-447c-ab62-a8ef88e30c24")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
@@ -395,18 +381,6 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "29850504-3648-4423-a2ad-d028328ab4db")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -416,6 +390,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -428,6 +403,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -439,7 +415,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "81a9b0b1-25dd-4b96-9f40-e12349c36c70")
 		)
@@ -450,7 +426,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "49bfc592-6717-4732-8b18-82cc45f40a0a")
 		)
@@ -461,6 +437,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "aebf99c9-fff8-43d1-bc97-b18388c87b69")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm"
 		(layer "F.Cu")
@@ -491,18 +468,6 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d4a68d38-333e-40e9-853f-5d0243c0f41d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -512,6 +477,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -524,12 +490,13 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/b2c50021-fc59-4e07-9c39-990246ac1217")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RJ45BreakOut.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_line
@@ -632,6 +599,7 @@
 			(pintype "passive")
 			(uuid "3b212c90-3fe6-4e3e-8238-d668b898947c")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm"
 		(layer "F.Cu")
@@ -662,18 +630,6 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "81aecfb2-29a8-47bf-ad3c-3182361d0166")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -683,6 +639,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -695,12 +652,13 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/5b51d740-c12b-4ed5-b6d9-86be950eda05")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RJ45BreakOut.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_line
@@ -803,6 +761,7 @@
 			(pintype "passive")
 			(uuid "a30eadd2-9169-40bd-84bf-c0eda1bca2f3")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal"
 		(layer "F.Cu")
@@ -811,7 +770,7 @@
 		(descr "8 Pol Shallow Latch Connector, Modjack, RJ45 (https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/c-bmj-0102.pdf)")
 		(tags "RJ45")
 		(property "Reference" "J1"
-			(at 4.445 -5 -90)
+			(at 4.445 -5 270)
 			(layer "F.SilkS")
 			(uuid "97fa7121-78ad-4840-98ab-dee413725ba0")
 			(effects
@@ -822,25 +781,13 @@
 			)
 		)
 		(property "Value" "RJ45"
-			(at 4.445 4 -90)
+			(at 4.445 4 270)
 			(layer "F.Fab")
 			(uuid "764516e7-8f95-486f-8a5f-6c2d4eb6b80f")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6d1eb5d0-ff42-4593-9379-7d1cf3414243")
-			(effects
-				(font
-					(size 1.27 1.27)
 				)
 			)
 		)
@@ -853,6 +800,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -865,12 +813,13 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
 		(property ki_fp_filters "8P8C* RJ31* RJ32* RJ33* RJ34* RJ35* RJ41* RJ45* RJ49* RJ61*")
 		(path "/34e0f77e-0b0b-42d3-b63a-87e6fe2d49e5")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RJ45BreakOut.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1034,7 +983,7 @@
 			(uuid "f057f8a1-4818-4e4e-9676-c445a088d99d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 4.445 2 -90)
+			(at 4.445 2 270)
 			(layer "F.Fab")
 			(uuid "142da250-7f89-4287-ba57-b3a27b5c01c7")
 			(effects
@@ -1138,6 +1087,7 @@
 			(pintype "passive")
 			(uuid "228dc1eb-73d4-4d9a-9381-c4916525af80")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_RJ.3dshapes/RJ45_Amphenol_54602-x08_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1157,7 +1107,7 @@
 		(descr "SMD rectangular pad as test Point, square 1.5mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "TP2"
-			(at 0 -1.648 -90)
+			(at 0 -1.648 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ea7925d9-bbc1-4b43-8c20-8c89f9cd5399")
@@ -1169,25 +1119,13 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 0 1.75 -90)
+			(at 0 1.75 270)
 			(layer "F.Fab")
 			(uuid "3592254c-fcc1-4b81-8dba-39df537dc253")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1dbd7f48-85ad-47c4-8878-eae3ea426aca")
-			(effects
-				(font
-					(size 1.27 1.27)
 				)
 			)
 		)
@@ -1200,6 +1138,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1212,12 +1151,13 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/861ea824-9ee3-49a4-bf58-57e18cb75733")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RJ45BreakOut.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_line
@@ -1301,7 +1241,7 @@
 			(uuid "3d66b5cc-600f-4c0b-98b2-c1cf6dcd91f2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.65 -90)
+			(at 0 -1.65 270)
 			(layer "F.Fab")
 			(uuid "a728f8cf-8a33-4b6f-b083-ed1017e2608d")
 			(effects
@@ -1320,6 +1260,7 @@
 			(pintype "passive")
 			(uuid "67530258-4f3e-44e0-9c8f-72972c72ebf8")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm"
 		(layer "F.Cu")
@@ -1328,7 +1269,7 @@
 		(descr "SMD rectangular pad as test Point, square 1.5mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "TP4"
-			(at 0 -1.648 -90)
+			(at 0 -1.648 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "926ff630-5780-4572-9b3b-e2277f973054")
@@ -1340,25 +1281,13 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 0 1.75 -90)
+			(at 0 1.75 270)
 			(layer "F.Fab")
 			(uuid "aa53ecdd-7487-4df2-9156-03dabea00215")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1200cbf7-b700-4fe2-9047-d81ec74ac857")
-			(effects
-				(font
-					(size 1.27 1.27)
 				)
 			)
 		)
@@ -1371,6 +1300,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1383,12 +1313,13 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/d5aec766-bb5c-4b44-8df9-aeb3caced7ea")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RJ45BreakOut.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_line
@@ -1472,7 +1403,7 @@
 			(uuid "f6eda977-039f-4910-a217-10318cb0a084")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.65 -90)
+			(at 0 -1.65 270)
 			(layer "F.Fab")
 			(uuid "7acc8eb8-4394-4c0e-ba26-b9a52c2dd9e9")
 			(effects
@@ -1491,6 +1422,7 @@
 			(pintype "passive")
 			(uuid "907200f7-9100-488d-a62d-c4973677d643")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm"
 		(layer "F.Cu")
@@ -1499,7 +1431,7 @@
 		(descr "SMD rectangular pad as test Point, square 1.5mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "TP3"
-			(at 0 -1.648 -90)
+			(at 0 -1.648 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "c65bbd56-433f-4b92-847f-2e0d6631aeed")
@@ -1511,7 +1443,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 0 1.75 -90)
+			(at 0 1.75 270)
 			(layer "F.Fab")
 			(uuid "4d4eccc1-6a7b-4faa-87ed-1f1f988e5203")
 			(effects
@@ -1521,20 +1453,8 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8aba1622-816b-43f7-8f2c-f651f3b3c622")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1542,11 +1462,12 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
 		(property "Description" "test point"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1554,12 +1475,13 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/25703bf5-4387-4d2f-92b9-b82bea33ad94")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RJ45BreakOut.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_line
@@ -1643,7 +1565,7 @@
 			(uuid "42807a84-39ad-46cf-b847-ee8ba53a3abb")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.65 -90)
+			(at 0 -1.65 270)
 			(layer "F.Fab")
 			(uuid "f9d42af7-deb6-4d9f-a143-79880ec32287")
 			(effects
@@ -1662,6 +1584,7 @@
 			(pintype "passive")
 			(uuid "b3395e02-3b71-44f5-aab4-8e498fb01956")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm"
 		(layer "F.Cu")
@@ -1692,18 +1615,6 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f69f5780-b195-46db-8400-ba77b672cf2e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -1713,6 +1624,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1725,12 +1637,13 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/688db220-deee-4912-a5b2-72855c535c1f")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RJ45BreakOut.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_line
@@ -1833,6 +1746,7 @@
 			(pintype "passive")
 			(uuid "7f5853d8-5085-49f3-b8d6-2286cb478cd3")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm"
 		(layer "F.Cu")
@@ -1841,7 +1755,7 @@
 		(descr "SMD rectangular pad as test Point, square 1.5mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "TP1"
-			(at 0 -1.648 -90)
+			(at 0 -1.648 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "05b364c2-c8bc-4996-8d0e-534f377bb769")
@@ -1853,7 +1767,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 0 1.75 -90)
+			(at 0 1.75 270)
 			(layer "F.Fab")
 			(uuid "c1a79c9a-d109-4f29-bdaa-ff7e75e9825f")
 			(effects
@@ -1863,20 +1777,8 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2fc549af-43da-4352-927c-70f771408f14")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1884,11 +1786,12 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
 		(property "Description" "test point"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1896,12 +1799,13 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/82218cea-a8b9-42f4-a9b4-eb2539113c96")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RJ45BreakOut.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_line
@@ -1985,7 +1889,7 @@
 			(uuid "b7b24831-ec83-42d6-92ed-34b94fe2690e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.65 -90)
+			(at 0 -1.65 270)
 			(layer "F.Fab")
 			(uuid "9d190457-7c3c-47aa-a1fb-04e066047aa5")
 			(effects
@@ -2004,6 +1908,7 @@
 			(pintype "passive")
 			(uuid "af38aabf-1c0f-46cd-bb17-f025b3de6701")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Horizontal"
 		(layer "F.Cu")
@@ -2033,18 +1938,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Horizontal"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2d054455-84d2-475e-b1bf-e4c9bee19dde")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -2054,6 +1947,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2066,12 +1960,13 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/032b0471-09bb-42cf-983a-8e0499c63dcf")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RJ45BreakOut.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3235,7 +3130,7 @@
 			(uuid "4cfca08c-0ac9-4dd1-a60e-58d880800358")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.77 8.89 -90)
+			(at 2.77 8.89 270)
 			(layer "F.Fab")
 			(uuid "980d9c5e-9a7c-4e97-93d1-45899771ad1f")
 			(effects
@@ -3333,6 +3228,7 @@
 			(pintype "passive")
 			(uuid "3bc6ac2a-a497-48cf-9e2a-71549a5e7e15")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x08_P2.54mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3701,4 +3597,5 @@
 		(net 8)
 		(uuid "b1aa7a88-26a5-4fad-9104-669b385ffe06")
 	)
+	(embedded_fonts no)
 )
